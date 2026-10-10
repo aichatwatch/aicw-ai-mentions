@@ -224,4 +224,4 @@ node bin/aicw-ai-mentions.js help
 
 ## License
 
-See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
