@@ -122,7 +122,7 @@ function buildJsonLd(
     questionCount: number;
     formattedDate: string;
     referencingBrands: Array<{ value: string }>;
-    baseUrl?: string;  // Base URL for absolute URLs (e.g., https://aicw.io/ranking/Project/questionId/)
+    baseUrl?: string;  // Base URL for absolute URLs (e.g., https://aichatwatch.com/ranking/Project/questionId/)
   },
   totalDomains: number,
   faqs?: Array<{ question: string; answer: string }>
@@ -164,7 +164,7 @@ function buildJsonLd(
       "isPartOf": {
         "@type": "WebSite",
         "name": "AICW AI Mentions",
-        "url": "https://aicw.io"
+        "url": "https://aichatwatch.com"
       },
       "mainEntity": { "@id": `${absoluteCanonicalUrl}#website` }
     },
@@ -854,7 +854,7 @@ function generateSourceIntroHtml(
     introText += ` when they were asked the following ${questions.length} question${questions.length !== 1 ? 's' : ''}: ${questionsText}`;
   }
 
-  introText += ` on <strong>${formattedDate}</strong> by <a href="https://www.aicw.io/aicw-ai-mentions" class="text-indigo-600 hover:underline">AICW AI Mentions</a>.`;
+  introText += ` on <strong>${formattedDate}</strong> by <a href="https://aichatwatch.com/aicw-ai-mentions/" class="text-indigo-600 hover:underline">AICW AI Mentions</a>.`;
 
   if (brandsText) {
     introText += ` This source is referenced for brands: ${brandsText}.`;
@@ -906,7 +906,7 @@ export interface SourcePageConfig {
   outputDir: string;
   templateDir: string;
   enrichedDataFile: string;
-  baseUrl?: string;  // Base URL for absolute URLs in JSON-LD (e.g., https://aicw.io/ranking/Project/questionId/)
+  baseUrl?: string;  // Base URL for absolute URLs in JSON-LD (e.g., https://aichatwatch.com/ranking/Project/questionId/)
 }
 
 /**

@@ -1,6 +1,6 @@
 {
   "name": "aicw-ai-mentions",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -59,11 +59,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/aicw-io/aicw-ai-mentions"
+    "url": "https://github.com/aichatwatch/aicw-ai-mentions"
   },
-  "homepage": "https://github.com/aicw-io/aicw-ai-mentions#readme",
+  "homepage": "https://github.com/aichatwatch/aicw-ai-mentions#readme",
   "bugs": {
-    "url": "https://github.com/aicw-io/aicw-ai-mentions/issues"
+    "url": "https://github.com/aichatwatch/aicw-ai-mentions/issues"
   },
   "author": "Evgenii Mironichev",
   "license": "MIT",

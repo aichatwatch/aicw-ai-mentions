@@ -255,7 +255,7 @@ async function generateHomePageWithProjects(outputDir: string): Promise<void> {
 
       // Build JSON-LD ItemList item with stats
       const hasStats = reportStats.brands > 0 || reportStats.domains > 0;
-      projectListItems.push(`{"@type":"ListItem","position":${i + 1},"name":"${projectName.replace(/"/g, '\\"')}","url":"https://aicw.io/ranking/${encodeURIComponent(project.name)}/"${hasStats ? `,"description":"${reportStats.brands} brands tracked, ${reportStats.domains} link domains found"` : ''}}`);
+      projectListItems.push(`{"@type":"ListItem","position":${i + 1},"name":"${projectName.replace(/"/g, '\\"')}","url":"https://aichatwatch.com/ranking/${encodeURIComponent(project.name)}/"${hasStats ? `,"description":"${reportStats.brands} brands tracked, ${reportStats.domains} link domains found"` : ''}}`);
     }
   } catch (err) {
     throw err

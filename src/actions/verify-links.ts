@@ -16,7 +16,7 @@ function shouldCheckReachability(): boolean {
 }
 
 async function canResolveKnownDomain(): Promise<boolean> {
-  const probeDomains = ['aicw.io', 'github.com', 'google.com'];
+  const probeDomains = ['aichatwatch.com', 'github.com', 'google.com'];
   const results = await Promise.all(
     probeDomains.map(async domain => {
       try {

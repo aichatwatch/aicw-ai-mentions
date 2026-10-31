@@ -5,7 +5,7 @@ import { isValidLink, validateLinkReachability } from '../dist/utils/validate-li
 
 test('validates link syntax before reachability checks', () => {
   assert.equal(isValidLink('aicw.ai/ai-mentions'), true);
-  assert.equal(isValidLink('https://aicw.io/aicw-ai-mentions'), true);
+  assert.equal(isValidLink('https://aichatwatch.com/aicw-ai-mentions/'), true);
   assert.equal(isValidLink('not-a-link'), false);
   assert.equal(isValidLink('https://no-dot'), false);
 });
