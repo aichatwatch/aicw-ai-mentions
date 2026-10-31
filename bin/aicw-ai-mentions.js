@@ -90,7 +90,7 @@ process.on('uncaughtException', (error) => {
   }
 
   console.error('\nIf this keeps happening, please report it:');
-  console.error('📧 https://github.com/aicw-io/aicw-ai-mentions/issues\n');
+  console.error('📧 https://github.com/aichatwatch/aicw-ai-mentions/issues\n');
 
   process.exit(1);
 });

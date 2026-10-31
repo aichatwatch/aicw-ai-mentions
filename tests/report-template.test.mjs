@@ -46,11 +46,11 @@ test('main report tabs are ordered mentions, links, link domains', () => {
   assert.match(template, /answer-response-markdown/);
   assert.match(template, /setAnswerTab/);
   assert.match(template, /Created with AICW AI Mentions/);
-  assert.match(template, /https:\/\/aicw\.io\/aicw-ai-mentions/);
+  assert.match(template, /https:\/\/aichatwatch\.com\/aicw-ai-mentions\//);
   assert.match(reportGenerator, /truncateMiddle/);
   assert.match(reportGenerator, /data-export-value/);
   assert.doesNotMatch(template, /View all categories/);
-  assert.doesNotMatch(template, /github\.com\/aicw-io\/aicw-ai-mentions/);
+  assert.doesNotMatch(template, /github\.com\/(?:aicw-io|aichatwatch)\/aicw-ai-mentions/);
 });
 
 test('public report templates link AICW AI Mentions to the product page', () => {
@@ -64,11 +64,11 @@ test('public report templates link AICW AI Mentions to the product page', () => 
 
   for (const file of templateFiles) {
     const template = readFileSync(path.join(process.cwd(), file), 'utf8');
-    assert.doesNotMatch(template, /github\.com\/aicw-io\/aicw-ai-mentions/, file);
+    assert.doesNotMatch(template, /github\.com\/(?:aicw-io|aichatwatch)\/aicw-ai-mentions/, file);
   }
 
   const combined = templateFiles
     .map(file => readFileSync(path.join(process.cwd(), file), 'utf8'))
     .join('\n');
-  assert.match(combined, /https:\/\/www\.aicw\.io\/aicw-ai-mentions/);
+  assert.match(combined, /https:\/\/aichatwatch\.com\/aicw-ai-mentions\//);
 });

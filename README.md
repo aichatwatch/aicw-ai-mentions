@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/4e334850-e496-40fd-9204-dc37fb534489
 
 ### Live Demo report
 
-[Explore live demo report for "Y Combinator" term](https://aicw.io/demo/aicw-ai-mentions/)
+[Explore live demo report for "Y Combinator" term](https://aichatwatch.com/demo/aicw-ai-mentions/)
 
 ## Install
 
@@ -205,7 +205,7 @@ Link verification is optional and off by default. Update checks only show a noti
 ## Development
 
 ```bash
-git clone https://github.com/aicw-io/aicw-ai-mentions.git
+git clone https://github.com/aichatwatch/aicw-ai-mentions.git
 cd aicw-ai-mentions
 npm install
 npm test

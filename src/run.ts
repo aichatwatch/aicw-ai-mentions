@@ -95,7 +95,7 @@ function stopWebServer(): boolean {
 
 function printHeader(): void {
   const version = getCurrentVersion();
-  output.writeLine(colorize(`\n🤖 aicw-ai-mentions ${version} - https://github.com/aicw-io/aicw-ai-mentions `, 'bright'));
+  output.writeLine(colorize(`\n🤖 aicw-ai-mentions ${version} - https://github.com/aichatwatch/aicw-ai-mentions `, 'bright'));
 
   // Show update notification if available
   const updateNotification = getUpdateNotification();

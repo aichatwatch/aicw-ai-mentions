@@ -876,7 +876,7 @@ function buildJsonLd(
     topBrandsList: string;
     questionsList: string;
     formattedDate: string;
-    baseUrl?: string;  // Base URL for absolute URLs (e.g., https://aicw.io/ranking/Project/questionId/)
+    baseUrl?: string;  // Base URL for absolute URLs (e.g., https://aichatwatch.com/ranking/Project/questionId/)
   },
   seoData?: {
     faqs?: Array<{ question: string; answer: string }>;
@@ -892,10 +892,10 @@ function buildJsonLd(
     ? `${meta.baseUrl}index.html`
     : (meta.canonicalUrl || 'index.html');
   // Build absolute URL for the project listing page (parent of report)
-  // For aicw.io hosted reports, this should be https://aicw.io/ranking/
+  // For reports hosted on aichatwatch.com, this should be https://aichatwatch.com/ranking/
   const absoluteProjectUrl = meta.baseUrl
     ? meta.baseUrl.replace(/\/[^/]+\/$/, '/')
-    : 'https://aicw.io/ranking/';
+    : 'https://aichatwatch.com/ranking/';
 
   const graph: object[] = [
     {
@@ -908,7 +908,7 @@ function buildJsonLd(
       "isPartOf": {
         "@type": "WebSite",
         "name": "AICW AI Mentions",
-        "url": "https://aicw.io"
+        "url": "https://aichatwatch.com"
       }
     },
     {
@@ -920,13 +920,13 @@ function buildJsonLd(
       "author": {
         "@type": "Organization",
         "name": "AICW AI Mentions",
-        "url": "https://aicw.io"
+        "url": "https://aichatwatch.com"
       }
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "AICW AI Mentions", "item": "https://aicw.io" },
+        { "@type": "ListItem", "position": 1, "name": "AICW AI Mentions", "item": "https://aichatwatch.com" },
         { "@type": "ListItem", "position": 2, "name": meta.projectName, "item": absoluteProjectUrl },
         { "@type": "ListItem", "position": 3, "name": "Report", "item": absoluteReportUrl }
       ]
@@ -965,7 +965,7 @@ export interface StaticReportConfig {
   questions?: Array<{ id: string; text: string; brandsCount?: number; domainsCount?: number }>;
   questionText?: string;
   canonicalUrl?: string;
-  baseUrl?: string;  // Base URL for absolute URLs in JSON-LD (e.g., https://aicw.io/ranking/Project/questionId/)
+  baseUrl?: string;  // Base URL for absolute URLs in JSON-LD (e.g., https://aichatwatch.com/ranking/Project/questionId/)
 }
 
 /**
