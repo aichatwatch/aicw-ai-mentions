@@ -50,7 +50,7 @@ test('main report tabs are ordered mentions, links, link domains', () => {
   assert.match(reportGenerator, /truncateMiddle/);
   assert.match(reportGenerator, /data-export-value/);
   assert.doesNotMatch(template, /View all categories/);
-  assert.doesNotMatch(template, /github\.com\/(?:aicw-io|aichatwatch)\/aicw-ai-mentions/);
+  assert.doesNotMatch(template, /github\.com\/aichatwatch\/aicw-ai-mentions/);
 });
 
 test('public report templates link AICW AI Mentions to the product page', () => {
@@ -64,7 +64,7 @@ test('public report templates link AICW AI Mentions to the product page', () => 
 
   for (const file of templateFiles) {
     const template = readFileSync(path.join(process.cwd(), file), 'utf8');
-    assert.doesNotMatch(template, /github\.com\/(?:aicw-io|aichatwatch)\/aicw-ai-mentions/, file);
+    assert.doesNotMatch(template, /github\.com\/aichatwatch\/aicw-ai-mentions/, file);
   }
 
   const combined = templateFiles

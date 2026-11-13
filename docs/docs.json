@@ -1,0 +1,78 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "AICW AI Mentions",
+  "description": "Ask several AI models the same questions, find the names and links they use, and read the result in a local HTML report.",
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#667eea"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/aichatwatch/aicw-ai-mentions"
+      },
+      {
+        "label": "Live demo",
+        "href": "https://aichatwatch.com/demo/aicw-ai-mentions/"
+      },
+      {
+        "label": "Project page",
+        "href": "https://aichatwatch.com/aicw-ai-mentions/"
+      }
+    ],
+    "primary": {
+      "label": "Install",
+      "href": "/install"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/aichatwatch"
+    },
+    "links": [
+      {
+        "header": "AI Chat Watch",
+        "items": [
+          {
+            "label": "AI Chat Watch (AICW)",
+            "href": "https://aichatwatch.com"
+          },
+          {
+            "label": "Privacy",
+            "href": "https://aichatwatch.com/privacy/"
+          }
+        ]
+      }
+    ]
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude", "mcp"]
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get started",
+        "pages": ["index", "quickstart", "install", "api-keys"]
+      },
+      {
+        "group": "Guides",
+        "pages": [
+          "question-templates",
+          "reading-the-report",
+          "model-presets",
+          "mcp-server",
+          "agent-skill"
+        ]
+      },
+      {
+        "group": "Reference",
+        "pages": ["commands", "local-data-and-privacy"]
+      },
+      {
+        "group": "Help",
+        "pages": ["troubleshooting", "contributing"]
+      }
+    ]
+  }
+}
